@@ -9,6 +9,7 @@ public class Tank {
     private int y;
     private boolean enemy;
     private Direction direction;
+    private boolean stopped;
 
     public int getX() {
         return x;
@@ -75,21 +76,21 @@ public class Tank {
         String prefix = enemy ? "e" : "";
         switch (direction) {
             case UP:
-                return new ImageIcon("assets/images/" + prefix + "tankU.gif").getImage();
+                return  Tool.getImage(prefix + "tankU.gif");
             case DOWN:
-                return new ImageIcon("assets/images/" + prefix + "tankD.gif").getImage();
+                return  Tool.getImage(prefix + "tankD.gif");
             case LEFT:
-                return new ImageIcon("assets/images/" + prefix + "tankL.gif").getImage();
+                return  Tool.getImage(prefix + "tankL.gif");
             case RIGHT:
-                return new ImageIcon("assets/images/" + prefix + "tankR.gif").getImage();
+                return  Tool.getImage(prefix + "tankR.gif");
             case UPLEFT:
-                return new ImageIcon("assets/images/" + prefix + "tankLU.gif").getImage();
+                return  Tool.getImage(prefix + "tankLU.gif");
             case UPRIGHT:
-                return new ImageIcon("assets/images/" + prefix + "tankRU.gif").getImage();
+                return  Tool.getImage(prefix + "tankRU.gif");
             case DOWNLEFT:
-                return new ImageIcon("assets/images/" + prefix + "tankLD.gif").getImage();
+                return  Tool.getImage(prefix + "tankLD.gif");
             case DOWNRIGHT:
-                return new ImageIcon("assets/images/" + prefix + "tankRD.gif").getImage();
+                return  Tool.getImage(prefix + "tankRD.gif");
         }
         return null;
     }
@@ -117,7 +118,6 @@ public class Tank {
         }
 
     }
-    private boolean stopped;
 
     private void determineDirection() {
         if (!up && !left && !down && !right){
@@ -133,8 +133,6 @@ public class Tank {
             else if (!up && left && !down && !right) this.direction = Direction.LEFT;
             this.stopped = false;
         }
-
-
     }
 
     public void keyReleased(KeyEvent e) {

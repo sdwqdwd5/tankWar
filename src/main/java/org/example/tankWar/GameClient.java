@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GameClient extends JComponent {
-    private  Tank playerTank;
+    private Tank playerTank;
     private List<Tank> enemyTanks;
     private List<Wall> walls;
     public GameClient(){
@@ -47,7 +47,7 @@ public class GameClient extends JComponent {
     public static void main(String[] args){
         JFrame frame = new JFrame();
         frame.setTitle("Tank War");
-        frame.setIconImage(new ImageIcon("assets/images/icon.png").getImage());
+        frame.setIconImage(Tool.getImage("Icon.png"));
         final GameClient client = new GameClient();
         frame.add(client);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -56,9 +56,7 @@ public class GameClient extends JComponent {
             @Override
             public void keyPressed(KeyEvent e) {
                 client.playerTank.keyPressed(e);
-
             }
-
             @Override
             public void keyReleased(KeyEvent e) {
                client.playerTank.keyReleased(e);
