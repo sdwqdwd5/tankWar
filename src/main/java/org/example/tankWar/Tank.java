@@ -1,8 +1,12 @@
 package org.example.tankWar;
 
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class Tank {
     private int x;
@@ -141,18 +145,29 @@ public class Tank {
             case KeyEvent.VK_RIGHT:
                 right = true;
                 break;
+            case KeyEvent.VK_A:
+                fire();
+                break;
         }
+    }
 
+    private void fire() {
+        Missile missile = new Missile(x + getImage().getWidth(null) / 2 - 6,
+                                      y + getImage().getHeight(null)/ 2 - 6,enemy,direction);
+        GameClient.getInstance().getMissiles().add(missile);
+//        Media sound = new Media(new File("assets/audios/shoot.wav").toURI().toString());
+//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+//        mediaPlayer.play();
     }
 
     private void determineDirection() {
         if (!up && !left && !down && !right){
             this.stopped = true;
         }else {
-            if (up && left && !down && !right) this.direction = Direction.UPLEFT;
-            else if (up && !left && !down && right) this.direction = Direction.UPRIGHT;
-            else if (!up && left && down && !right) this.direction = Direction.DOWNLEFT;
-            else if (!up && !left && down && right) this.direction = Direction.DOWNRIGHT;
+                 if (up && left && !down && !right)  this.direction = Direction.UPLEFT;
+            else if (up && !left && !down && right)  this.direction = Direction.UPRIGHT;
+            else if (!up && left && down && !right)  this.direction = Direction.DOWNLEFT;
+            else if (!up && !left && down && right)  this.direction = Direction.DOWNRIGHT;
             else if (up && !left && !down && !right) this.direction = Direction.UP;
             else if (!up && !left && down && !right) this.direction = Direction.DOWN;
             else if (!up && !left && !down && right) this.direction = Direction.RIGHT;
