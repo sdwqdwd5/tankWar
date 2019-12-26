@@ -11,21 +11,35 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GameClient extends JComponent {
+    public static final GameClient INSTANCE = new GameClient();
+
+    public static GameClient getInstance(){
+        return INSTANCE;
+    }
+
     private Tank playerTank;
     private List<Tank> enemyTanks;
     private List<Wall> walls;
+
+    public List<Wall> getWalls() {
+        return walls;
+    }
+
+    public List<Tank> getEnemyTanks() {
+        return enemyTanks;
+    }
     public GameClient(){
-        this.playerTank = new Tank(400,100,Direction.DOWN);
+        this.playerTank = new Tank(400,80,Direction.DOWN);
         this.enemyTanks = new ArrayList<>(12);
         this.walls = Arrays.asList(
-                new Wall(200, 140, true, 15),
-                new Wall(200, 540, true, 15),
+                new Wall(200, 120, true, 15),
+                new Wall(200, 520, true, 15),
                 new Wall(100,  80, false,15),
                 new Wall(700,  80, false,15)
         );
         for (int i = 0; i < 3; i++){
            for (int j = 0; j < 4; j++){
-               this.enemyTanks.add(new Tank(200 + j * 140,400 + 40 * i, true, Direction.UP));
+               this.enemyTanks.add(new Tank(200 + j * 140,360 + 40 * i, true, Direction.UP));
            }
         }
         this.setPreferredSize(new Dimension(800,600));
