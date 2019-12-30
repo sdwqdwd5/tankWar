@@ -3,10 +3,10 @@ package org.example.tankWar;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.util.Random;
 
 public class Tank {
     private int x;
@@ -14,6 +14,7 @@ public class Tank {
     private boolean enemy;
     private Direction direction;
     private boolean stopped;
+    private boolean up, down, left, right;
 
     public int getX() {
         return x;
@@ -33,6 +34,7 @@ public class Tank {
     public Tank(int x, int y, Direction direction) {
         this(x, y, false, direction);
     }
+
     public Tank(int x, int y, boolean enemy, Direction direction) {
         this.x = x;
         this.y = y;
@@ -57,19 +59,19 @@ public class Tank {
             case RIGHT:
                 x += 5;
                 break;
-            case UPLEFT:
+            case LEFT_UP:
                 x -= 5;
                 y -= 5;
                 break;
-            case UPRIGHT:
+            case RIGHT_UP:
                 x += 5;
                 y -= 5;
                 break;
-            case DOWNLEFT:
+            case LEFT_DOWN:
                 x -= 5;
                 y += 5;
                 break;
-            case DOWNRIGHT:
+            case RIGHT_DOWN:
                 x += 5;
                 y += 5;
                 break;
@@ -78,25 +80,7 @@ public class Tank {
 
     Image getImage() {
         String prefix = enemy ? "e" : "";
-        switch (direction) {
-            case UP:
-                return  Tool.getImage(prefix + "tankU.gif");
-            case DOWN:
-                return  Tool.getImage(prefix + "tankD.gif");
-            case LEFT:
-                return  Tool.getImage(prefix + "tankL.gif");
-            case RIGHT:
-                return  Tool.getImage(prefix + "tankR.gif");
-            case UPLEFT:
-                return  Tool.getImage(prefix + "tankLU.gif");
-            case UPRIGHT:
-                return  Tool.getImage(prefix + "tankRU.gif");
-            case DOWNLEFT:
-                return  Tool.getImage(prefix + "tankLD.gif");
-            case DOWNRIGHT:
-                return  Tool.getImage(prefix + "tankRD.gif");
-        }
-        return null;
+        return direction.getImage(prefix + "tank");
     }
     void draw(Graphics g){
         int preX = x;
@@ -129,7 +113,6 @@ public class Tank {
     public Rectangle getRectangle(){
         return new Rectangle(x, y, getImage().getWidth(null), getImage().getHeight(null));
     }
-    private boolean up, down, left, right;
 
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
@@ -145,29 +128,46 @@ public class Tank {
             case KeyEvent.VK_RIGHT:
                 right = true;
                 break;
-            case KeyEvent.VK_A:
+            case KeyEvent.VK_CONTROL:
                 fire();
+                break;
+            case KeyEvent.VK_A:
+                superFire();
                 break;
         }
     }
 
     private void fire() {
+
         Missile missile = new Missile(x + getImage().getWidth(null) / 2 - 6,
                                       y + getImage().getHeight(null)/ 2 - 6,enemy,direction);
         GameClient.getInstance().getMissiles().add(missile);
-//        Media sound = new Media(new File("assets/audios/shoot.wav").toURI().toString());
-//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
-//        mediaPlayer.play();
+        playAudio("shoot.wav");
+    }
+
+    private void superFire() {
+        for (Direction direction : Direction.values()) {
+            Missile missile = new Missile(x + getImage().getWidth(null) / 2 - 6,
+                    y + getImage().getHeight(null) / 2 - 6, enemy, direction);
+            GameClient.getInstance().getMissiles().add(missile);
+        }
+        playAudio(new Random().nextBoolean() ? "supershoot.aiff" : "supershoot.wav");
+    }
+
+    private void playAudio(String fileName) {
+        Media sound = new Media(new File("assets/audios/" + fileName).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
     }
 
     private void determineDirection() {
         if (!up && !left && !down && !right){
             this.stopped = true;
         }else {
-                 if (up && left && !down && !right)  this.direction = Direction.UPLEFT;
-            else if (up && !left && !down && right)  this.direction = Direction.UPRIGHT;
-            else if (!up && left && down && !right)  this.direction = Direction.DOWNLEFT;
-            else if (!up && !left && down && right)  this.direction = Direction.DOWNRIGHT;
+                 if (up && left && !down && !right)  this.direction = Direction.LEFT_UP;
+            else if (up && !left && !down && right)  this.direction = Direction.RIGHT_DOWN;
+            else if (!up && left && down && !right)  this.direction = Direction.LEFT_DOWN;
+            else if (!up && !left && down && right)  this.direction = Direction.RIGHT_DOWN;
             else if (up && !left && !down && !right) this.direction = Direction.UP;
             else if (!up && !left && down && !right) this.direction = Direction.DOWN;
             else if (!up && !left && !down && right) this.direction = Direction.RIGHT;

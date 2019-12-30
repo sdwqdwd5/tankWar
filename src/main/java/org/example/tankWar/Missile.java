@@ -3,6 +3,7 @@ package org.example.tankWar;
 import java.awt.*;
 
 public class Missile {
+
     public static final int SPEED = 10;
     private int x;
     private int y;
@@ -16,26 +17,8 @@ public class Missile {
         this.direction = direction;
     }
     Image getImage() {
-        String prefix = enemy ? "e" : "";
-        switch (direction) {
-            case UP:
-                return  Tool.getImage("missileU.gif");
-            case DOWN:
-                return  Tool.getImage("missileD.gif");
-            case LEFT:
-                return  Tool.getImage("missileL.gif");
-            case RIGHT:
-                return  Tool.getImage("missileR.gif");
-            case UPLEFT:
-                return  Tool.getImage("missileLU.gif");
-            case UPRIGHT:
-                return  Tool.getImage("missileRU.gif");
-            case DOWNLEFT:
-                return  Tool.getImage("missileLD.gif");
-            case DOWNRIGHT:
-                return  Tool.getImage("missileRD.gif");
-        }
-        return null;
+
+        return direction.getImage(  "missile");
     }
 
     void move(){
@@ -52,19 +35,19 @@ public class Missile {
             case RIGHT:
                 x += SPEED;
                 break;
-            case UPLEFT:
+            case LEFT_UP:
                 x -= SPEED;
                 y -= SPEED;
                 break;
-            case UPRIGHT:
+            case RIGHT_UP:
                 x += SPEED;
                 y -= SPEED;
                 break;
-            case DOWNLEFT:
+            case LEFT_DOWN:
                 x -= SPEED;
                 y += SPEED;
                 break;
-            case DOWNRIGHT:
+            case RIGHT_DOWN:
                 x += SPEED;
                 y += SPEED;
                 break;

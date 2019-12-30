@@ -11,16 +11,15 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GameClient extends JComponent {
+    private Tank playerTank;
+    private List<Tank> enemyTanks;
+    private List<Wall> walls;
+    private List<Missile> missiles;
     public static final GameClient INSTANCE = new GameClient();
 
     public static GameClient getInstance(){
         return INSTANCE;
     }
-
-    private Tank playerTank;
-    private List<Tank> enemyTanks;
-    private List<Wall> walls;
-    private List<Missile> missiles;
 
     public List<Wall> getWalls() {
         return walls;
@@ -33,27 +32,29 @@ public class GameClient extends JComponent {
     public List<Missile> getMissiles() {
         return missiles;
     }
-
+    //set data field
     public GameClient(){
-        this.playerTank = new Tank(400,80,Direction.DOWN);
+        this.playerTank = new Tank(380,80,Direction.DOWN);
         this.enemyTanks = new ArrayList<>(12);
         this.missiles   = new ArrayList<>();
         this.walls = Arrays.asList(
-                new Wall(200, 120, true, 15),
-                new Wall(200, 520, true, 15),
-                new Wall(100,  80, false,15),
+                new Wall(175, 120, true, 15),
+                new Wall(175, 520, true, 15),
+                new Wall(80,  80, false,15),
                 new Wall(700,  80, false,15)
         );
         for (int i = 0; i < 3; i++){
            for (int j = 0; j < 4; j++){
-               this.enemyTanks.add(new Tank(200 + j * 140,360 + 40 * i, true, Direction.UP));
+               this.enemyTanks.add(new Tank(175 + j * 137,360 + 50 * i, true, Direction.UP));
            }
         }
         this.setPreferredSize(new Dimension(800,600));
     }
 
     @Override
+    // paint data field
     protected void paintComponent(Graphics g) {
+        //set background to black
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, 800, 600);
        playerTank.draw(g);
@@ -69,11 +70,12 @@ public class GameClient extends JComponent {
     }
 
     public static void main(String[] args){
-        //com.sun.javafx.application.PlatformImpl.startup(() -> {});
+        com.sun.javafx.application.PlatformImpl.startup(() -> {});
         JFrame frame = new JFrame();
         frame.setTitle("Tank War");
         frame.setIconImage(Tool.getImage("Icon.png"));
         final GameClient client = GameClient.getInstance();
+
         frame.add(client);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
@@ -92,7 +94,7 @@ public class GameClient extends JComponent {
         while(true){
             client.repaint();
             try{
-                Thread.sleep(50);
+                Thread.sleep(15);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }

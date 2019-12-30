@@ -16,9 +16,14 @@ public class Wall {
         this.horizontal = horizontal;
         this.bricks = bricks;
     }
+
+    public Image getBrickImage() {
+        return brickImage;
+    }
+
     public Rectangle getRectangle(){
         return horizontal ? new Rectangle(x, y, bricks * brickImage.getWidth(null), brickImage.getHeight(null)):
-                            new Rectangle(x, y, brickImage.getWidth(null),bricks * brickImage.getHeight(null));
+                            new Rectangle(x, y, brickImage.getWidth(null),bricks * brickImage.getHeight(null) + 25);
     }
     public void draw(Graphics g){
         if (horizontal){
