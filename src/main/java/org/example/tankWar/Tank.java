@@ -16,6 +16,27 @@ public class Tank {
     private Direction direction;
     private boolean stopped;
     private boolean up, down, left, right;
+    private boolean live = true;
+    private int hp = 100;
+    public boolean isEnemy() {
+        return enemy;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public boolean isLive() {
+        return live;
+    }
+
+    public void setLive(boolean live) {
+        this.live = live;
+    }
 
     public int getX() {
         return x;
