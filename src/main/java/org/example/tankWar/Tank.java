@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.Random;
 
 public class Tank {
-    private static final int MOVE_SPEED = 5;
+    private static int MOVE_SPEED = 5;
     private int x;
     private int y;
     private boolean enemy;
@@ -77,7 +77,9 @@ public class Tank {
     void draw(Graphics g){
         int preX = x;
         int preY = y;
-        this.determineDirection();
+        if (! this.enemy){
+            this.determineDirection();
+        }
         this.move();
 
         if (x < 0) x = 0;
@@ -94,11 +96,22 @@ public class Tank {
             }
         }
         for (Tank enemyTank : GameClient.getInstance().getEnemyTanks()){
-            if (rec.intersects(enemyTank.getRectangle())){
+            if (enemyTank != this && rec.intersects(enemyTank.getRectangle())){
                 x = preX;
                 y = preY;
                 break;
             }
+        }
+        if (this.enemy && rec.intersects(GameClient.getInstance().getPlayerTank().getRectangle())){
+            x = preX;
+            y = preY;
+        }
+        if (! enemy){
+            g.setColor(Color.WHITE);
+            g.fillRect(x, y - 10, this.getImage().getWidth(null), 10);
+            g.setColor(Color.RED);
+            int width = hp * this.getImage().getWidth(null)/100;
+            g.fillRect(x,y-10,width,10);
         }
         g.drawImage(this.getImage(), this.x, this.y,null);
     }
@@ -126,6 +139,13 @@ public class Tank {
             case KeyEvent.VK_A:
                 superFire();
                 break;
+            case KeyEvent.VK_F2:
+                GameClient.getInstance().restart();
+                break;
+            case KeyEvent.VK_Z:
+                this.MOVE_SPEED = 20;
+                break;
+
         }
     }
 
@@ -134,7 +154,7 @@ public class Tank {
         Missile missile = new Missile(x + getImage().getWidth(null) / 2 - 6,
                                       y + getImage().getHeight(null)/ 2 - 6,enemy,direction);
         GameClient.getInstance().getMissiles().add(missile);
-        playAudio("shoot.wav");
+       // Tool.playAudio("shoot.wav");
     }
 
     private void superFire() {
@@ -143,13 +163,7 @@ public class Tank {
                     y + getImage().getHeight(null) / 2 - 6, enemy, direction);
             GameClient.getInstance().getMissiles().add(missile);
         }
-        playAudio(new Random().nextBoolean() ? "supershoot.aiff" : "supershoot.wav");
-    }
-
-    private void playAudio(String fileName) {
-        Media sound = new Media(new File("assets/audios/" + fileName).toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(sound);
-        mediaPlayer.play();
+        //Tool.playAudio(new Random().nextBoolean() ? "supershoot.aiff" : "supershoot.wav");
     }
 
     private void determineDirection() {
@@ -157,7 +171,7 @@ public class Tank {
             this.stopped = true;
         }else {
                  if (up && left && !down && !right)  this.direction = Direction.LEFT_UP;
-            else if (up && !left && !down && right)  this.direction = Direction.RIGHT_DOWN;
+            else if (up && !left && !down && right)  this.direction = Direction.RIGHT_UP;
             else if (!up && left && down && !right)  this.direction = Direction.LEFT_DOWN;
             else if (!up && !left && down && right)  this.direction = Direction.RIGHT_DOWN;
             else if (up && !left && !down && !right) this.direction = Direction.UP;
@@ -182,6 +196,23 @@ public class Tank {
             case KeyEvent.VK_RIGHT:
                 right = false;
                 break;
+            case KeyEvent.VK_Z:
+                this.MOVE_SPEED = 5;
+                break;
         }
+    }
+    private final Random random = new Random();
+    private int step = new Random().nextInt(5);
+    public void actRandomly() {
+        Direction [] dirs = Direction.values();
+        if(step == 0){
+            step = random.nextInt(5) + 3 ;
+            this.direction = dirs[random.nextInt(dirs.length)];
+           // if (random.nextBoolean()){
+                this.fire();
+            //}
+        }
+        step --;
+
     }
 }
