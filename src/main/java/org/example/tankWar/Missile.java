@@ -37,7 +37,7 @@ public class Missile {
 
     void draw(Graphics g){
         move();
-        if (x < 0 || x > 800 || y < 0 || y > 600) {
+        if (x < 0 || x > GameClient.WIDTH || y < 0 || y > GameClient.HEIGHT) {
             this.live = false;
             return;
         }
@@ -74,7 +74,7 @@ public class Missile {
     }
     private void addExplosion(){
         GameClient.getInstance().getExplosions().add(new Explosion(x,y));
-       // Tool.playAudio("explode.wav");
+        Tool.playAudio("explode.wav");
     }
     Rectangle getRectangle(){
         return new Rectangle(x, y, getImage().getWidth(null), getImage().getHeight(null));

@@ -17,5 +17,6 @@ public class Tool {
         Media sound = new Media(new File("assets/audios/" + fileName).toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.play();
+
     }
 }
