@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -152,7 +151,7 @@
       <workItem from="1597135702749" duration="6937000" />
       <workItem from="1597149409083" duration="451000" />
       <workItem from="1597149878136" duration="9719000" />
-      <workItem from="1597309077492" duration="1754000" />
+      <workItem from="1597309077492" duration="2034000" />
     </task>
     <task id="LOCAL-00001" summary="the final version of tankwar">
       <created>1597233564082</created>
@@ -182,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597309778883</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Revert &quot;the final version of tankwar&quot;&#10;&#10;This reverts commit 211d51bfe62ae8cd8e6dc4a19891de58c0945b97.">
+      <created>1597310990497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597310990497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +243,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="the final version of tankwar" />
-    <option name="LAST_COMMIT_MESSAGE" value="the final version of tankwar" />
+    <MESSAGE value="Revert &quot;the final version of tankwar&quot;&#10;&#10;This reverts commit 211d51bfe62ae8cd8e6dc4a19891de58c0945b97." />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;the final version of tankwar&quot;&#10;&#10;This reverts commit 211d51bfe62ae8cd8e6dc4a19891de58c0945b97." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1597147594349">
@@ -248,11 +255,11 @@
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="2676" y="167" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597135762272" />
-    <state x="2318" y="-233" key="CommitChangelistDialog2" timestamp="1597310014455">
+    <state x="2318" y="-233" key="CommitChangelistDialog2" timestamp="1597310989960">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233714800" />
-    <state x="2318" y="-233" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597310014455" />
+    <state x="2318" y="-233" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597310989960" />
     <state width="1237" height="154" key="GridCell.Tab.0.bottom" timestamp="1597233578541">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -286,11 +293,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="362" y="102" width="540" height="524" key="StructurePopup/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597226803377" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309800250">
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597310992854">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="233" y="95" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233820402" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309800250" />
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597310992854" />
     <state x="2426" y="46" key="com.intellij.ide.util.TipDialog" timestamp="1597309078408">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
