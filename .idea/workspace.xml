@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="the final version of tankwar">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="ProjectId" id="1fug4gWZcFNlcscgg3tH2qG0f17" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.tankWar" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameClient">
+    <configuration name="GameClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.tankWar.GameClient" />
+      <module name="tank_war" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tankWar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in tank_war" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tank_war" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tank_war" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tankWar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tankWar" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tankWar.TankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameClient" />
+        <item itemvalue="JUnit.All in tank_war" />
+        <item itemvalue="JUnit.TankTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="" />
+      <created>1597073201942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597073201942</updated>
+      <workItem from="1597073205210" duration="325000" />
+      <workItem from="1597073543109" duration="552000" />
+      <workItem from="1597135702749" duration="6937000" />
+      <workItem from="1597149409083" duration="451000" />
+      <workItem from="1597149878136" duration="9719000" />
+      <workItem from="1597309077492" duration="304000" />
+    </task>
+    <task id="LOCAL-00001" summary="the final version of tankwar">
+      <created>1597233564082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597233564082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="the final version of tankwar" />
+    <option name="LAST_COMMIT_MESSAGE" value="the final version of tankwar" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1597147594349">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="446" y="63" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597147594349" />
+    <state x="2676" y="167" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597135762272">
+      <screen x="1920" y="-233" width="1920" height="1080" />
+    </state>
+    <state x="2676" y="167" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597135762272" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1597233714800">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233714800" />
+    <state width="1237" height="154" key="GridCell.Tab.0.bottom" timestamp="1597233578541">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.bottom/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233578541" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597074095259" />
+    <state width="1237" height="154" key="GridCell.Tab.0.center" timestamp="1597233578541">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.center/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233578541" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597074095259" />
+    <state width="1237" height="154" key="GridCell.Tab.0.left" timestamp="1597233578541">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.left/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233578541" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597074095259" />
+    <state width="1237" height="154" key="GridCell.Tab.0.right" timestamp="1597233578541">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.right/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233578541" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597074095259" />
+    <state x="438" y="73" key="RollbackChangesDialog" timestamp="1597225475348">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="438" y="73" key="RollbackChangesDialog/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597225475348" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1597149861212">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597149861212" />
+    <state x="2360" y="-118" key="SettingsEditor/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597073579777" />
+    <state x="362" y="102" width="540" height="524" key="StructurePopup" timestamp="1597226803377">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="362" y="102" width="540" height="524" key="StructurePopup/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597226803377" />
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309398267">
+      <screen x="1920" y="-233" width="1920" height="1080" />
+    </state>
+    <state x="233" y="95" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233820402" />
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309398267" />
+    <state x="2426" y="46" key="com.intellij.ide.util.TipDialog" timestamp="1597309078408">
+      <screen x="1920" y="-233" width="1920" height="1080" />
+    </state>
+    <state x="337" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597149884557" />
+    <state x="2426" y="46" key="com.intellij.ide.util.TipDialog/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309078408" />
+    <state x="2451" y="201" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597073467707">
+      <screen x="1920" y="-233" width="1920" height="1080" />
+    </state>
+    <state x="2451" y="201" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597073467707" />
+    <state x="371" y="117" key="extract.method.dialog" timestamp="1597151460087">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="117" key="extract.method.dialog/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597151460087" />
+    <state x="334" y="92" width="612" height="536" key="find.popup" timestamp="1597148378093">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="334" y="92" width="612" height="536" key="find.popup/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597148378093" />
+    <state x="456" y="256" key="git4idea.ui.GitResetDialog" timestamp="1597225516792">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="456" y="256" key="git4idea.ui.GitResetDialog/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597225516792" />
+    <state x="2452" y="39" key="search.everywhere.popup" timestamp="1597309406663">
+      <screen x="1920" y="-233" width="1920" height="1080" />
+    </state>
+    <state x="2452" y="39" key="search.everywhere.popup/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309406663" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tank_war$All_in_tank_war.ic" NAME="All in tank_war Coverage Results" MODIFIED="1597231685742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
