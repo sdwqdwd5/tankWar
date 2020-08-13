@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <list id="dcca897b-72de-4c1a-9615-9251f34c5bf3" name="Revert &quot;the final version of tankwar&quot;" comment="Revert &quot;the final version of tankwar&quot;&#10;&#10;This reverts commit 211d51bf">
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +152,7 @@
       <workItem from="1597135702749" duration="6937000" />
       <workItem from="1597149409083" duration="451000" />
       <workItem from="1597149878136" duration="9719000" />
-      <workItem from="1597309077492" duration="517000" />
+      <workItem from="1597309077492" duration="1754000" />
     </task>
     <task id="LOCAL-00001" summary="the final version of tankwar">
       <created>1597233564082</created>
@@ -164,11 +168,71 @@
       <option name="project" value="LOCAL" />
       <updated>1597309444281</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="the final version of tankwar">
+      <created>1597309630049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597309630049</updated>
+    </task>
+    <task id="LOCAL-00004" summary="the final version of tankwar">
+      <created>1597309778883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597309778883</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -184,11 +248,11 @@
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="2676" y="167" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597135762272" />
-    <state x="2318" y="-233" key="CommitChangelistDialog2" timestamp="1597309443710">
+    <state x="2318" y="-233" key="CommitChangelistDialog2" timestamp="1597310014455">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233714800" />
-    <state x="2318" y="-233" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309443710" />
+    <state x="2318" y="-233" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597310014455" />
     <state width="1237" height="154" key="GridCell.Tab.0.bottom" timestamp="1597233578541">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -222,11 +286,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="362" y="102" width="540" height="524" key="StructurePopup/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597226803377" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309447517">
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309800250">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="233" y="95" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233820402" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309447517" />
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309800250" />
     <state x="2426" y="46" key="com.intellij.ide.util.TipDialog" timestamp="1597309078408">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
@@ -248,10 +312,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="456" y="256" key="git4idea.ui.GitResetDialog/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597225516792" />
-    <state x="2452" y="39" key="search.everywhere.popup" timestamp="1597309406663">
+    <state x="2452" y="39" key="search.everywhere.popup" timestamp="1597309742085">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
-    <state x="2452" y="39" key="search.everywhere.popup/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309406663" />
+    <state x="2452" y="39" key="search.everywhere.popup/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309742085" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tank_war$All_in_tank_war.ic" NAME="All in tank_war Coverage Results" MODIFIED="1597231685742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
