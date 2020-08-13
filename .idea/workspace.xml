@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="the final version of tankwar">
+    <list default="true" id="663990ea-e25e-41e9-ba64-c924360838fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +148,7 @@
       <workItem from="1597135702749" duration="6937000" />
       <workItem from="1597149409083" duration="451000" />
       <workItem from="1597149878136" duration="9719000" />
-      <workItem from="1597309077492" duration="304000" />
+      <workItem from="1597309077492" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="the final version of tankwar">
       <created>1597233564082</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597233564082</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="the final version of tankwar">
+      <created>1597309444281</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597309444281</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,10 +184,11 @@
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="2676" y="167" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597135762272" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1597233714800">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="2318" y="-233" key="CommitChangelistDialog2" timestamp="1597309443710">
+      <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233714800" />
+    <state x="2318" y="-233" key="CommitChangelistDialog2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309443710" />
     <state width="1237" height="154" key="GridCell.Tab.0.bottom" timestamp="1597233578541">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -213,11 +222,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="362" y="102" width="540" height="524" key="StructurePopup/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597226803377" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309398267">
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2" timestamp="1597309447517">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
     <state x="233" y="95" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@0.0.1280.720" timestamp="1597233820402" />
-    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309398267" />
+    <state x="2270" y="-90" key="Vcs.Push.Dialog.v2/0.0.1280.720/1920.-233.1920.1080@1920.-233.1920.1080" timestamp="1597309447517" />
     <state x="2426" y="46" key="com.intellij.ide.util.TipDialog" timestamp="1597309078408">
       <screen x="1920" y="-233" width="1920" height="1080" />
     </state>
