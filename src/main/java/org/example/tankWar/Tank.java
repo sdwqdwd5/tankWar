@@ -215,9 +215,9 @@ public class Tank {
         if(step == 0){
             step = random.nextInt(5) + 3 ;
             this.direction = dirs[random.nextInt(dirs.length)];
-           // if (random.nextBoolean()){
+            if (random.nextBoolean()){
                 this.fire();
-            //}
+            }
         }
         step --;
 
